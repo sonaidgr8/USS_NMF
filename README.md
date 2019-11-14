@@ -4,7 +4,8 @@ Semi-supervised clusterable node representation learning for homogeneous graphs.
 Please see our initial work:- Vijayan, Priyesh, et al. ["Semi-supervised learning for clusterable graph embeddings with NMF."] (https://priyeshv.github.io/R2L_SSNMF.pdf)
 
 ### How to run
-Input: Input is organized as follows -
+## Input:- 
+    Input is organized as follows -
     Datasets/
         |_ _ _ <Dataset-name>
                     |_ _ _ <Dataset-name.mat>
@@ -15,11 +16,17 @@ Input: Input is organized as follows -
                                                     |_ _ _ train_ids.npy
                                                     |_ _ _ val_ids.npy
    
- python main_algo.py --DATA_DIR cora --ALPHA_BIAS -2 --ALPHA 1.0 --LAMBDA 1.0 --L_COMPONENTS 16
+ ## Usage:-
+    python main_algo.py --DATA_DIR cora --ALPHA_BIAS -2 --ALPHA 1.0 --LAMBDA 1.0 --L_COMPONENTS 16
         * ALPHA_BIAS : Alpha bias level for biased random walk
         * ALPHA : Similarity matrix factorization weight
         * LAMBDA : L2 regularization weight
         * L_COMPONENTS : Dimension of projected space
+ 
+ ## Output:-
+    * The generated node and label embeddings are saved in Emb/ folder as <emb_dataset_U/Q<Fold-No>>.npy.
+    * The node and label embeddings are of dimension (#Nodes x L_COMPONENTS) & (#Labels x L_COMPONENTS).
+    * The Node Classification evaluation results are stored in - Results/ folder 
 
 
 ## Running the tests
