@@ -8,29 +8,29 @@ Semi-supervised clusterable node representation learning for homogeneous graphs.
  ## Input:- 
     Input is organized as follows -
     Datasets/
-        |_ _ _ <Dataset-name>
+        |_ _ _ <Dataset-name>/
                     |_ _ _ <Dataset-name.mat>
                     |_ _ _ <Stats.txt>
-                    |_ _ _ <Percentage of train-test splits>
-                                        |_ _ _ <Fold-Number>
+                    |_ _ _ <Percentage of train-test splits>/
+                                        |_ _ _ <Fold-Number>/
                                                     |_ _ _ train_ids.npy
                                                     |_ _ _ test_ids.npy
                                                     |_ _ _ val_ids.npy
    
  ## Usage:-
     python main_algo.py --DATA_DIR cora --ALPHA 1 --BETA 0.1 --THETA 0.5 --K 20 --L_COMPONENTS 128
-        - ALPHA : Similarity matrix factorization weight
-        - BETA : Community Indicator matrix factorization weight
-        - THETA : Label matrix factorization weight
-        - K : Number of clusters
-        - L_COMPONENTS : Dimension of representation space
+        * ALPHA : Similarity matrix factorization weight
+        * BETA : Community Indicator matrix factorization weight
+        * THETA : Label matrix factorization weight
+        * K : Number of clusters
+        * L_COMPONENTS : Dimension of representation space
   
  > Please look at the *get_ArgumentParser()* function in **main_algo.py** to specify default values.
  
  ## Output:-
-    1. The generated node and label embeddings are saved in emb/ folder as Q & U .npy files.
+    1. The generated node and label embeddings are saved in emb/ folder as Q & U .npy files respectively.
     2. The node and label embeddings are of dimension (#Nodes x L_COMPONENTS) & (#Labels x L_COMPONENTS).
-    3. The Node Classification evaluation results are stored in **Results** folder 
+    3. The Node Classification evaluation results are stored in Results folder.
 
 ## License
 
