@@ -1,7 +1,8 @@
 # A Unified Non-Negative Matrix Factorization Framework for Semi Supervised Learning on Graphs
 
 Semi-supervised clusterable node representation learning for homogeneous graphs.
-Please see our initial work:- Vijayan, Priyesh, et al. ["Semi-supervised learning for clusterable graph embeddings with NMF."] (https://priyeshv.github.io/R2L_SSNMF.pdf)
+
+Please see our initial work:- Vijayan, Priyesh, et al. [Semi-supervised learning for clusterable graph embeddings with NMF.] (https://priyeshv.github.io/R2L_SSNMF.pdf) [NeuIPS 2018 Poster](https://drive.google.com/file/d/1jqoo3cKJ-X_nFAeo7FdvJajWxANO8Vrb/view?usp=sharing)
 
 ### How to run
 ## Input:- 
