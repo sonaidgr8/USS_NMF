@@ -24,7 +24,8 @@ Semi-supervised clusterable node representation learning for homogeneous graphs.
         * THETA : Label matrix factorization weight
         * K : Number of clusters
         * L_COMPONENTS : Dimension of representation space
-    > Please look at the "get_ArgumentParser()" function in "main_algo.py" to specify default values.
+  
+ > Please look at the "get_ArgumentParser()" function in "main_algo.py" to specify default values.
  
  ## Output:-
     * The generated node and label embeddings are saved in Emb/ folder as <emb_dataset_U/Q<Fold-No>>.npy.
